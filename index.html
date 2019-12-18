@@ -7,11 +7,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Ninja Chat</title>
+    <title>Jolly Chat</title>
 </head>
 
-<body>
-
+<body> 
     <!-- container & title -->
     <div class="container my-4">
         <h1 class="my-4 text-center">Jolly Chat</h1>
@@ -21,7 +20,7 @@
             <button class="btn" id="general">#general</button>
             <button class="btn" id="gaming">#gaming</button>
             <button class="btn" id="music">#music</button>
-            <button class="btn" id="ninjas">#ninjas</button>
+            <button class="btn" id="joker">#joker</button>
         </div>
         <!-- chat list / window -->
         <div class="chat-window">
@@ -54,22 +53,26 @@
         </form>
     </div>
 
+    <!-- script per normalizzare le date -->
+    <script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
+
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-firestore.js"></script>
+    
     <!-- TODO: Add SDKs for Firebase products that you want to use
          https://firebase.google.com/docs/web/setup#available-libraries -->
     
     <script>
         // Your web app's Firebase configuration
         var firebaseConfig = {
-            apiKey: "AIzaSyBXK-9lhSrsF4CzYWrWGYeAYIx-PzdaTTc",
-            authDomain: "jolly-js.firebaseapp.com",
-            databaseURL: "https://jolly-js.firebaseio.com",
-            projectId: "jolly-js",
-            storageBucket: "jolly-js.appspot.com",
-            messagingSenderId: "1094175378249",
-            appId: "1:1094175378249:web:1c7f0f65b5d6a391b8e898"
+            apiKey: "AIzaSyBeukS8Jk-ebCpdC50L4-5C_pt9n0LSGZA",
+            authDomain: "jollychat-98601.firebaseapp.com",
+            databaseURL: "https://jollychat-98601.firebaseio.com",
+            projectId: "jollychat-98601",
+            storageBucket: "jollychat-98601.appspot.com",
+            messagingSenderId: "1055511171735",
+            appId: "1:1055511171735:web:33f1c6661711bb79ba8fd2"
         };
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
